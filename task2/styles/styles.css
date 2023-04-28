@@ -3,6 +3,7 @@
 :root {
   --black: #0e1014;
   --light-text: #e4e5ea;
+  --dark-text: #656566;
   --gradient-h1: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%),
     #e4e5ea;
   --gradient-h2: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
@@ -15,16 +16,14 @@
   padding: 0 15px;
 }
 
-.wrapper {
-  background: url("../assets/images/bg-lg.png");
-}
-
 body {
-  background: var(--black);
+  background: url("../assets/images/bg-lg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header {
-  padding-top: 46px;
+  margin-top: 46px;
 }
 
 .header__body {
@@ -99,27 +98,31 @@ body {
 .contacts__text_is-link {
 }
 
-.contacts__list {
+.contacts__icon-list {
+}
+
+.icon-list {
   display: flex;
   gap: 30px;
 }
 
-.contacts__item {
+.icon-list__item {
 }
 
-.contacts__icon-link-wrapper {
+.icon-list__icon-link-wrapper {
   display: inline-block;
   width: 20px;
   height: 20px;
 }
 
-.contacts__icon {
+.icon-list__icon {
   width: 20px;
   height: 20px;
 }
 
 .content {
   margin-top: 90px;
+  margin-bottom: 69px;
 }
 
 .content__body {
@@ -231,4 +234,91 @@ body {
   width: 262px;
   height: 61px;
   display: inline-block;
+}
+
+.footer {
+}
+
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.footer__map {
+  display: flex;
+  gap: 98px;
+  max-width: 701px;
+}
+
+.footer__menu {
+  display: flex;
+  gap: 52px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__list_without-heading {
+  margin-top: 37px;
+}
+
+.footer__list_is-contacts {
+  align-items: end;
+  gap: 20px;
+}
+
+.footer__item {
+}
+
+.footer__item_is-heading {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--dark-text);
+  margin-bottom: 10px;
+}
+
+.footer__link,
+.footer__text {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--light-text);
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: end;
+}
+
+.footer__icon-list {
+}
+
+.footer__policy {
+  margin-top: 70px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--light-text);
+  max-width: 240px;
+}
+
+.footer__policy_text-decoration {
+  text-decoration: underline;
 }
