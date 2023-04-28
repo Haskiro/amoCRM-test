@@ -8,7 +8,7 @@
 
 Например 01:12:59 - один час, 12 минут, 59 секунд.
 
-[Check task 1](/task1)
+[Check task 1](https://haskiro.github.io/amoCRM-test/task1)
 
 ## Задание 2
 
@@ -16,7 +16,7 @@
 
 https://www.figma.com/file/ja6QtJ9gv2JuxSDIAClL1O/Welbex?node-id=0%3A1
 
-[Check task 2](/task2)
+[Check task 2](https://haskiro.github.io/amoCRM-test/task2)
 
 ---
 
