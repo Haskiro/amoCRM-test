@@ -22,7 +22,7 @@ body {
 }
 
 body {
-  background: url("../assets/images/bg-lg.png");
+  background-image: url("../assets/images/bg-lg.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -272,6 +272,7 @@ main {
 }
 
 .footer {
+  background-color: var(--black);
 }
 
 .footer__body {

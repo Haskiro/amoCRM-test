@@ -150,3 +150,7 @@ body {
 .footer__policy {
   margin-top: 50px;
 }
+
+.footer__policy.footer__policy_text-decoration_underline {
+  margin-top: 0;
+}
