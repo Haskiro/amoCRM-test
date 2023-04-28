@@ -65,7 +65,7 @@ main {
 .header__logo {
   width: 139px;
   height: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .header__logo-text {
@@ -153,7 +153,7 @@ main {
 
 .content {
   padding-top: 90px;
-  padding-bottom: 69px;
+  padding-bottom: 124px;
 }
 
 .content__body {
@@ -171,7 +171,6 @@ main {
   font-weight: 400;
   font-size: 48px;
   line-height: 58px;
-  margin-bottom: 30px;
 }
 
 .content__title_color_gradient {
@@ -181,6 +180,7 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  margin-bottom: 30px;
 }
 
 .content__subtitle {
@@ -193,6 +193,7 @@ main {
 }
 
 .content__usp {
+  margin-top: 14px;
 }
 
 .usp {
@@ -218,7 +219,8 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  max-width: 291px;
+  max-width: 301px;
+  text-align: end;
   margin-bottom: 40px;
 }
 
@@ -284,7 +286,8 @@ main {
 .footer__map {
   display: flex;
   gap: 98px;
-  max-width: 701px;
+  max-width: 1000px;
+  flex-grow: 1;
 }
 
 @media (max-width: 1024px) {
@@ -311,6 +314,10 @@ main {
 .footer__list_is-contacts {
   align-items: end;
   gap: 20px;
+}
+
+.footer__list_is-contacts .footer__item_is-heading {
+  margin-bottom: 0px;
 }
 
 .footer__item {
@@ -348,7 +355,8 @@ main {
   text-align: end;
 }
 
-.footer__icon-list {
+.footer__icon-list.icon-list {
+  gap: 10px;
 }
 
 .footer__policy {
@@ -359,9 +367,10 @@ main {
   line-height: 15px;
   color: var(--light-text);
   display: inline-block;
+  max-width: 250px;
 }
 
 .footer__policy_text-decoration_underline {
   text-decoration: underline;
-  margin-top: 0;
+  margin-top: 5px;
 }

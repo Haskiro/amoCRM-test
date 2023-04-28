@@ -58,6 +58,9 @@ body {
 .content__title {
   font-size: 36px;
   line-height: 44px;
+}
+
+.content__title.content__title_color_gradient {
   margin-bottom: 15px;
 }
 
@@ -72,6 +75,7 @@ body {
 .usp__heading {
   text-transform: none;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .usp__list {
@@ -96,6 +100,7 @@ body {
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  margin: 0;
 }
 
 .usp__title::before {
@@ -129,6 +134,10 @@ body {
 .footer__list_is-contacts {
   align-items: start;
   gap: 10px;
+}
+
+.footer__list_is-contacts .footer__item_is-heading {
+  margin-bottom: 10px;
 }
 
 .footer__item_is-heading {
