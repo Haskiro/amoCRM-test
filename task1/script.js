@@ -18,24 +18,30 @@ const timer = () => {
     },
   ];
 
-  setInterval(() => updateTime(time), 1000);
-
-  return clearInterval(updateTime);
+  const startTime = new Date().getTime();
+  const seconds = 0;
+  updateTime(time, startTime, seconds);
 };
 
-const updateTime = (time) => {
-  const [h, m, s] = time;
-  if (++s.value === 60) {
-    s.value = 0;
-    if (++m.value === 60) {
-      m.value = 0;
-      if (++h.value === 24) {
-        h.value = 0;
+const updateTime = (time, startTime, seconds) => {
+  const currentTime = new Date().getTime();
+  if (Math.floor((currentTime - startTime) / 1000) !== seconds) {
+    seconds += 1;
+    const [h, m, s] = time;
+    if (++s.value === 60) {
+      s.value = 0;
+      if (++m.value === 60) {
+        m.value = 0;
+        if (++h.value === 24) {
+          h.value = 0;
+        }
       }
     }
+
+    for (const timeUnit of time) render(timeUnit.node, timeUnit.value);
   }
 
-  for (const timeUnit of time) render(timeUnit.node, timeUnit.value);
+  requestAnimationFrame(() => updateTime(time, startTime, seconds));
 };
 
 const render = (node, value) => {
