@@ -1,0 +1,152 @@
+.container {
+  max-width: 450px;
+}
+
+body {
+  background: var(--black);
+}
+
+.header {
+  margin-top: 0;
+}
+
+.header__body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__menu {
+  width: 100%;
+}
+
+.header__logo-link {
+  display: none;
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav__list {
+  gap: initial;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav__item:last-of-type {
+  display: none;
+}
+
+.nav__link {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.content {
+  background: url("../assets/images/bg-sm.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 59px;
+}
+
+.content__body {
+  display: block;
+}
+
+.content__title {
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 15px;
+}
+
+.content__usp {
+  margin-top: 45px;
+}
+
+.usp {
+  text-align: left;
+}
+
+.usp__heading {
+  text-transform: none;
+  margin-bottom: 20px;
+}
+
+.usp__list {
+  display: none;
+}
+
+.usp__list.usp__list_is-mobile {
+  display: grid;
+  margin-bottom: 0;
+  grid-template-columns: 115px 141px;
+  row-gap: 14px;
+  column-gap: 10px;
+}
+
+.usp__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.usp__title::before {
+  content: url("../assets/icons/dash.svg");
+  margin-right: 5px;
+}
+
+.usp__text {
+  display: none;
+}
+
+.usp__button {
+  display: none;
+}
+
+.footer__body {
+  padding-top: 41px;
+  padding-bottom: 60px;
+  display: block;
+}
+
+.footer__map {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.footer__menu {
+  margin-top: 30px;
+}
+
+.footer__list_is-contacts {
+  align-items: start;
+  gap: 10px;
+}
+
+.footer__item_is-heading {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.footer__link,
+.footer__text {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer__contacts {
+  align-items: start;
+  text-align: start;
+}
+
+.footer__policy {
+  margin-top: 50px;
+}
